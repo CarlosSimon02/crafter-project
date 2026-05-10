@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/level-descriptor</content-type>
+	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>750f</objectGroupId>
+	<objectId>750f18d6-ff73-72da-c9de-3edbe426e84c</objectId>
+	<file-name>crafter-level-descriptor.level.xml</file-name>
+	<folder-name/>
+	<createdDate>2026-05-10T00:00:00.000Z</createdDate>
+	<createdDate_dt>2026-05-10T00:00:00.000Z</createdDate_dt>
+	<lastModifiedDate>2026-05-10T00:00:00.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-05-10T00:00:00.000Z</lastModifiedDate_dt>
+	<header_o item-list="true">
+		<item>
+			<key>8f0a97e0-712c-41fb-a3c4-05c7f00fa57f</key>
+			<value>Site Header (中文)</value>
+			<component>
+				<content-type>/component/component-header</content-type>
+				<display-template>/templates/web/components/header.ftl</display-template>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<internal-name>Site Header (中文)</internal-name>
+				<objectGroupId>8f0a</objectGroupId>
+				<objectId>8f0a97e0-712c-41fb-a3c4-05c7f00fa57f</objectId>
+				<logoImage_s>/static-assets/images/gotyme-logo-black.svg</logoImage_s>
+				<location_s>香港</location_s>
+				<ctaLabel_s>成爲合作夥伴</ctaLabel_s>
+				<ctaUrl_s>#</ctaUrl_s>
+			</component>
+		</item>
+	</header_o>
+</component>
