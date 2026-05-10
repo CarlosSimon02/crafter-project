@@ -8,41 +8,33 @@
 <#assign bgTablet           = contentModel.backgroundImageTablet_s!"/static-assets/images/hero-background-1x.webp" />
 
 <#--
-  Layout (matching gotyme.com.hk):
-    .hero          relative banner — h 653 desktop / 500 tablet / 400 mobile
-    .hero-bg-color #00f5fa cyan fill
-    .hero-bg-image picture: art-directed webp source for >=1024 / >=768 / fallback
-    .hero-content  centered text block at top, padding-top 5rem desktop / 4rem mobile
+  Hero is a flex column with two children:
+    1. .hero-content — text block at the top, takes its natural height.
+    2. .hero-image-area — fills the remaining space (flex-1), holds the
+       background image. Because text and image live in separate flex
+       children, they can NEVER overlap — even if the headline / subtitle
+       grows longer (more lines, longer translations), the image area
+       just shrinks accordingly.
+
+  Heights mirror gotyme.com.hk:
+    < 640px → 400px,  640-1023px → 500px,  ≥ 1024px → 653px.
 -->
 <section class="
-  hero relative overflow-hidden flex items-start justify-start
+  hero relative overflow-hidden flex flex-col bg-[#00f5fa]
   mx-auto mb-6
   w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-[1216px]
   h-[400px] sm:h-[500px] lg:h-[653px]
   rounded-2xl sm:rounded-3xl lg:rounded-[32px]
 ">
-  <#-- hero-background — cyan fill + bg image stacked -->
-  <div class="absolute inset-0 z-[1] overflow-hidden">
-    <div class="absolute inset-0 bg-[#00f5fa] z-[1] rounded-2xl sm:rounded-3xl lg:rounded-[32px]"></div>
-    <div class="absolute inset-0 z-[2] rounded-2xl sm:rounded-3xl lg:rounded-[32px]">
-      <picture class="block w-full h-full">
-        <source media="(min-width: 1024px)" srcset="${bgDesktop}" type="image/webp" sizes="1216px">
-        <source media="(min-width: 768px)"  srcset="${bgTablet}"  type="image/webp" sizes="768px">
-        <img
-          src="${bgTablet}"
-          alt=""
-          loading="eager"
-          decoding="async"
-          width="1216"
-          height="653"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
-          class="w-full h-full object-contain object-bottom lg:object-cover rounded-2xl sm:rounded-3xl lg:rounded-[32px] [contain:layout]">
-      </picture>
-    </div>
-  </div>
-
-  <#-- hero-content — centered text on top of background -->
-  <div class="relative z-[3] w-full max-w-[calc(100%-2rem)] sm:max-w-[calc(100%-2.5rem)] lg:max-w-[calc(100%-80px)] mx-auto pt-16 sm:pt-20 flex flex-col items-center text-center">
+  <#-- Text block — pinned to the top, sized by its content. -->
+  <div class="
+    relative z-[2]
+    w-full
+    px-4 sm:px-5 lg:px-10
+    pt-16 sm:pt-20
+    flex flex-col items-center text-center
+    shrink-0
+  ">
     <h1 class="
       flex flex-col items-center
       font-bold text-black tracking-[-0.02em]
@@ -52,7 +44,7 @@
       lg:text-[52px]
       xl:text-[66px] xl:leading-[1.25]
     ">
-      <#-- Mobile gets two lines via separate fields. Desktop shows the single headline. -->
+      <#-- Mobile: explicit two-line break via separate fields. Desktop: single headline. -->
       <span class="sm:hidden">${headlineMobile1}<br>${headlineMobile2}</span>
       <span class="hidden sm:inline">${headline}</span>
     </h1>
@@ -70,5 +62,22 @@
         <br>${subtitle2}
       </#if>
     </p>
+  </div>
+
+  <#-- Image area — fills remaining space, image cropped only inside this box. -->
+  <div class="relative flex-1 min-h-0 w-full overflow-hidden">
+    <picture class="block w-full h-full">
+      <source media="(min-width: 1024px)" srcset="${bgDesktop}" type="image/webp" sizes="1216px">
+      <source media="(min-width: 768px)"  srcset="${bgTablet}"  type="image/webp" sizes="768px">
+      <img
+        src="${bgTablet}"
+        alt=""
+        loading="eager"
+        decoding="async"
+        width="1216"
+        height="653"
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
+        class="absolute inset-0 w-full h-full object-cover object-bottom">
+    </picture>
   </div>
 </section>
