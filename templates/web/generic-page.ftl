@@ -31,8 +31,11 @@
   <body>
     <@crafter.body_top/>
 
-    <#if contentModel.header_o?? && contentModel.header_o.item??>
-      <@renderComponent component=contentModel.header_o.item />
+    <#assign headerItems = (contentModel.header_o.item)![] />
+    <#if headerItems?is_sequence && headerItems?has_content>
+      <@renderComponent parent=contentModel component=headerItems?first />
+    <#elseif headerItems?is_hash>
+      <@renderComponent parent=contentModel component=headerItems />
     </#if>
 
     <@crafter.div $field="containerSection_o">

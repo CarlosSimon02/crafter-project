@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2007-2022 Crafter Software Corporation. All Rights Reserved.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License version 3 as published by
-  ~ the Free Software Foundation.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
-
 <component>
-	<content-type>/component/level-descriptor</content-type>	<display-template/>
+	<content-type>/component/level-descriptor</content-type>
+	<display-template/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>750f</objectGroupId>
 	<objectId>750f18d6-ff73-72da-c9de-3edbe426e84c</objectId>
@@ -24,6 +9,24 @@
 	<folder-name/>
 	<createdDate>2017-10-9T16:52:48.000Z</createdDate>
 	<createdDate_dt>2017-10-9T16:52:48.000Z</createdDate_dt>
-	<lastModifiedDate>2017-10-9T16:52:48.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2017-10-9T16:52:48.000Z</lastModifiedDate_dt>
+	<lastModifiedDate>2026-05-10T00:00:00.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-05-10T00:00:00.000Z</lastModifiedDate_dt>
+	<header_o item-list="true">
+		<item>
+			<key>header-0000-0000-0000-000000000001</key>
+			<value>Site Header</value>
+			<component>
+				<content-type>/component/component-header</content-type>
+				<display-template>/templates/web/components/header.ftl</display-template>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<internal-name>Site Header</internal-name>
+				<objectGroupId>hdr0</objectGroupId>
+				<objectId>hdr0-0000-0000-0000-000000000001</objectId>
+				<logoImage_s>/static-assets/images/gotyme-logo-black.svg</logoImage_s>
+				<location_s>Hong Kong</location_s>
+				<ctaLabel_s>Partner with us</ctaLabel_s>
+				<ctaUrl_s>#</ctaUrl_s>
+			</component>
+		</item>
+	</header_o>
 </component>
