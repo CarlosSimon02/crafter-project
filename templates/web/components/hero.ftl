@@ -9,7 +9,6 @@
 <#assign badge3      = contentModel.badge3Label_s!"Zero monthly fees" />
 <#assign headlineParts = headline?split("|") />
 
-<@crafter.componentRootTag componentId="${contentModel.objectId}">
 <section
   class="relative min-h-[600px] lg:min-h-[680px] flex flex-col overflow-hidden bg-charcoal"
   style="background-image: url('${bgImage}'); background-size: cover; background-position: center left;"
@@ -60,4 +59,3 @@
     </div>
   </div>
 </section>
-</@crafter.componentRootTag>
