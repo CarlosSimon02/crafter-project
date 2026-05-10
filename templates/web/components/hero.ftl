@@ -4,8 +4,7 @@
 <#assign headlineMobile2    = contentModel.headlineMobileLine2_s!"small businesses" />
 <#assign subtitle1          = contentModel.subtitle1_s!"GoTyme Merchant Cash Advance Asia is a regional provider of fast, flexible financing built for SMEs." />
 <#assign subtitle2          = contentModel.subtitle2_s!"" />
-<#assign bgDesktop          = contentModel.backgroundImageDesktop_s!"/static-assets/images/hero-background.webp" />
-<#assign bgTablet           = contentModel.backgroundImageTablet_s!"/static-assets/images/hero-background-1x.webp" />
+<#assign bgImage            = contentModel.backgroundImageDesktop_s!"/static-assets/images/hero-background.webp" />
 
 <#--
   Hero is a flex column with two children:
@@ -64,20 +63,15 @@
     </p>
   </div>
 
-  <#-- Image area — natural aspect ratio, full width, no cropping. -->
+  <#-- Image area — transparent WebP, natural aspect ratio, full width. -->
   <div class="w-full">
-    <picture class="block w-full">
-      <source media="(min-width: 1024px)" srcset="${bgDesktop}" type="image/webp" sizes="1216px">
-      <source media="(min-width: 768px)"  srcset="${bgTablet}"  type="image/webp" sizes="768px">
-      <img
-        src="${bgTablet}"
-        alt=""
-        loading="eager"
-        decoding="async"
-        width="2429"
-        height="905"
-        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
-        class="block w-full h-auto mix-blend-multiply">
-    </picture>
+    <img
+      src="${bgImage}"
+      alt=""
+      loading="eager"
+      decoding="async"
+      width="654"
+      height="246"
+      class="block w-full h-auto">
   </div>
 </section>
