@@ -1,0 +1,15 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["sources/js"],
+  "scripts": {
+    "prepare": "husky",
+    "dev": "npm run dev --prefix sources/js",
+    "build": "npm run build --prefix sources/js",
+    "watch": "npm run watch --prefix sources/js"
+  },
+  "devDependencies": {
+    "husky": "^9"
+  }
+}

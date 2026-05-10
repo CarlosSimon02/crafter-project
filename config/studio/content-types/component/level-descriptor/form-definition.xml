@@ -1,0 +1,252 @@
+<!--
+  ~ Copyright (C) 2007-2022 Crafter Software Corporation. All Rights Reserved.
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License version 3 as published by
+  ~ the Free Software Foundation.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<form>
+	<title>Section Defaults</title>
+	<description>Section Defaults provides inherited values to all children and sibling content items. To learn more about content inheritance see craftercms.com/docs topic &quot;Content Inheritance&quot;</description>
+	<objectType>component</objectType>
+	<content-type>/component/level-descriptor</content-type>
+	<imageThumbnail>undefined</imageThumbnail>
+    <quickCreate>false</quickCreate>
+    <quickCreatePath></quickCreatePath>
+	<properties>		<property>
+			<name>display-template</name>
+			<label>Display Template</label>
+			<value></value>
+			<type>template</type>
+		</property>
+		<property>
+			<name>no-template-required</name>
+			<label>No Template Required</label>
+			<value></value>
+			<type>boolean</type>
+		</property>
+		<property>
+			<name>merge-strategy</name>
+			<label>Merge Strategy</label>
+			<value>inherit-levels</value>
+			<type>string</type>
+		</property>
+	</properties>
+	<sections>		<section>
+			<title>Section Defaults Properties</title>
+			<description></description>
+			<defaultOpen>true</defaultOpen>
+			<fields>
+				<field>
+					<type>file-name</type>
+					<id>file-name</id>
+					<iceId></iceId>
+					<title>File Name</title>
+					<description></description>
+					<defaultValue>crafter-level-descriptor.level</defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>100</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+					</constraints>
+				</field>
+				<field>
+					<type>node-selector</type>
+					<id>header_o</id>
+					<iceId></iceId>
+					<title>Header</title>
+					<description>Shared header component inherited by all pages in this folder</description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value>0</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>headerSource</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints></constraints>
+				</field>
+				<field>
+					<type>node-selector</type>
+					<id>footer_o</id>
+					<iceId></iceId>
+					<title>Footer</title>
+					<description>Shared footer component inherited by all pages in this folder</description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value>0</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value>1</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>footerSource</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints></constraints>
+				</field>
+			</fields>
+		</section>
+	</sections>
+	<datasources>
+		<datasource>
+			<type>components</type>
+			<id>headerSource</id>
+			<title>Header Source</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepoPath</name>
+					<value>/site/components/headers</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components/headers</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value></value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value></value>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>components</type>
+			<id>footerSource</id>
+			<title>Footer Source</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepoPath</name>
+					<value>/site/components/footers</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components/footers</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value></value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value></value>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+	</datasources>
+</form>

@@ -1,0 +1,27 @@
+{
+  "name": "demo-project-js",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run watch\" \"npm run sync\"",
+    "watch": "vite build --watch",
+    "sync": "browser-sync start --proxy localhost:8080 --files \"../../static-assets/js/**,../../templates/**/*.ftl\"",
+    "build": "tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4",
+    "browser-sync": "^3",
+    "concurrently": "^9",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^6"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "tailwindCSS.experimental.configFile": "sources/js/src/main.css",
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "freemarker2": "html"
+  },
+  "files.associations": {
+    "*.ftl": "html"
+  }
+}
