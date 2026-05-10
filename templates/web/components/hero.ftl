@@ -36,7 +36,7 @@
           width="1216"
           height="653"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
-          class="w-full h-full object-cover object-bottom rounded-2xl sm:rounded-3xl lg:rounded-[32px] [contain:layout]">
+          class="w-full h-full object-contain object-bottom lg:object-cover rounded-2xl sm:rounded-3xl lg:rounded-[32px] [contain:layout]">
       </picture>
     </div>
   </div>
