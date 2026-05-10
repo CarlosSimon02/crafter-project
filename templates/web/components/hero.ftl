@@ -77,7 +77,7 @@
         width="2429"
         height="905"
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
-        class="block w-full h-auto">
+        class="block w-full h-auto mix-blend-multiply">
     </picture>
   </div>
 </section>
