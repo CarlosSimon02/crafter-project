@@ -74,8 +74,8 @@
         alt=""
         loading="eager"
         decoding="async"
-        width="1216"
-        height="653"
+        width="2429"
+        height="905"
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
         class="block w-full h-auto">
     </picture>
