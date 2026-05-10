@@ -16,10 +16,8 @@
 	<metaDescription_s>GoTyme Business 為香港中小企業提供更智能、更便捷的銀行解決方案。即時開戶，24/7 全天候服務，零月費。</metaDescription_s>
 	<containerSection_o item-list="true">
 		<item>
-			<key>/site/components/hero/hero-home.xml</key>
+			<key>hero1-0000-0000-0000-000000000001</key>
 			<value>Hero - Home (中文)</value>
-			<include>/site/components/hero/hero-home.xml</include>
-			<disableFlattening>true</disableFlattening>
 			<component>
 				<content-type>/component/component-hero</content-type>
 				<display-template>/templates/web/components/hero.ftl</display-template>

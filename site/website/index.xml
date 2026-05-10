@@ -16,10 +16,8 @@
 	<metaDescription_s>GoTyme Business empowers SMEs in Hong Kong with a smarter, more accessible banking solution. Open in minutes, available 24/7, zero monthly fees.</metaDescription_s>
 	<containerSection_o item-list="true">
 		<item>
-			<key>/site/components/hero/hero-home.xml</key>
+			<key>hero1-0000-0000-0000-000000000001</key>
 			<value>Hero - Home</value>
-			<include>/site/components/hero/hero-home.xml</include>
-			<disableFlattening>true</disableFlattening>
 			<component>
 				<content-type>/component/component-hero</content-type>
 				<display-template>/templates/web/components/hero.ftl</display-template>
