@@ -12,8 +12,8 @@
 	<createdDate_dt>2026-05-10T00:00:00.000Z</createdDate_dt>
 	<lastModifiedDate>2026-05-10T00:00:00.000Z</lastModifiedDate>
 	<lastModifiedDate_dt>2026-05-10T00:00:00.000Z</lastModifiedDate_dt>
-	<seoTitle_s>GoTyme Business – 專為您努力的企業賬戶</seoTitle_s>
-	<metaDescription_s>GoTyme Business 為香港中小企業提供更智能、更便捷的銀行解決方案。即時開戶，24/7 全天候服務，零月費。</metaDescription_s>
+	<seoTitle_s>GoTyme MCA — 助亞洲中小企業快速成長</seoTitle_s>
+	<metaDescription_s>我們是一家跨國金融機構，專為亞洲的中小微企業提供快速且靈活的貸款產品。</metaDescription_s>
 	<containerSection_o item-list="true">
 		<item>
 			<key>30466cc2-7619-41e5-afdb-329a4c90eb39</key>
@@ -25,14 +25,13 @@
 				<internal-name>Hero - Home (中文)</internal-name>
 				<objectGroupId>3046</objectGroupId>
 				<objectId>30466cc2-7619-41e5-afdb-329a4c90eb39</objectId>
-				<headline_s>專為您努力 | 的企業賬戶</headline_s>
-				<subtext_s>GoTyme Business 為香港中小企業提供更智能、更便捷的銀行解決方案。</subtext_s>
-				<ctaLabel_s>立即開始</ctaLabel_s>
-				<ctaUrl_s>#</ctaUrl_s>
-				<backgroundImage_s>/static-assets/images/hero-background.webp</backgroundImage_s>
-				<badge1Label_s>即時開戶</badge1Label_s>
-				<badge2Label_s>24/7 全天候</badge2Label_s>
-				<badge3Label_s>零月費</badge3Label_s>
+				<headline_s>助中小企業快速成長</headline_s>
+				<headlineMobileLine1_s>助中小企</headlineMobileLine1_s>
+				<headlineMobileLine2_s>業快速成長</headlineMobileLine2_s>
+				<subtitle1_s>我們是一家跨國金融機構，</subtitle1_s>
+				<subtitle2_s>專為亞洲的中小微企業提供快速且靈活的貸款產品。</subtitle2_s>
+				<backgroundImageDesktop_s>/static-assets/images/hero-background.webp</backgroundImageDesktop_s>
+				<backgroundImageTablet_s>/static-assets/images/hero-background-1x.webp</backgroundImageTablet_s>
 			</component>
 		</item>
 	</containerSection_o>

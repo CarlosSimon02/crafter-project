@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
   <title>Component - Hero</title>
-  <description>Full-width hero section with background image, headline, subtext, and CTA</description>
+  <description>Full-width hero banner with cyan background, hero image, centered headline and subtitle</description>
   <objectType>component</objectType>
   <content-type>/component/component-hero</content-type>
   <imageThumbnail></imageThumbnail>
@@ -53,9 +53,9 @@
           <type>input</type>
           <id>headline_s</id>
           <iceId></iceId>
-          <title>Headline</title>
-          <description>Main headline text (supports line breaks via | character)</description>
-          <defaultValue>The Business Account | That Works As Hard As You</defaultValue>
+          <title>Headline (desktop)</title>
+          <description>Single-line headline shown on tablet/desktop (≥ 480px)</description>
+          <defaultValue>Big growth for small businesses.</defaultValue>
           <help></help>
           <properties>
             <property><name>size</name><value>100</value><type>int</type></property>
@@ -66,12 +66,40 @@
           </constraints>
         </field>
         <field>
-          <type>textarea</type>
-          <id>subtext_s</id>
+          <type>input</type>
+          <id>headlineMobileLine1_s</id>
           <iceId></iceId>
-          <title>Subtext</title>
-          <description>Short description below the headline</description>
-          <defaultValue>GoTyme Business empowers SMEs with a smarter, more accessible banking solution.</defaultValue>
+          <title>Headline mobile — line 1</title>
+          <description>First line of the headline on small mobile (&lt; 480px)</description>
+          <defaultValue>Big growth for</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>headlineMobileLine2_s</id>
+          <iceId></iceId>
+          <title>Headline mobile — line 2</title>
+          <description>Second line of the headline on small mobile (&lt; 480px)</description>
+          <defaultValue>small businesses</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>textarea</type>
+          <id>subtitle1_s</id>
+          <iceId></iceId>
+          <title>Subtitle (line 1)</title>
+          <description>First line of the subtitle below the headline.</description>
+          <defaultValue>GoTyme Merchant Cash Advance Asia is a regional provider of fast, flexible financing built for SMEs.</defaultValue>
           <help></help>
           <properties>
             <property><name>cols</name><value>60</value><type>int</type></property>
@@ -81,39 +109,33 @@
           <constraints></constraints>
         </field>
         <field>
-          <type>input</type>
-          <id>ctaLabel_s</id>
+          <type>textarea</type>
+          <id>subtitle2_s</id>
           <iceId></iceId>
-          <title>CTA Button Label</title>
-          <description></description>
-          <defaultValue>Get started</defaultValue>
+          <title>Subtitle (line 2)</title>
+          <description>Optional second line. Leave empty if not needed.</description>
+          <defaultValue></defaultValue>
           <help></help>
           <properties>
-            <property><name>size</name><value>50</value><type>int</type></property>
-            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>cols</name><value>60</value><type>int</type></property>
+            <property><name>rows</name><value>3</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
           </properties>
           <constraints></constraints>
         </field>
+      </fields>
+    </section>
+    <section>
+      <title>Background Images</title>
+      <description>Hero banner background imagery — supports separate sources for desktop / tablet / mobile.</description>
+      <defaultOpen>false</defaultOpen>
+      <fields>
         <field>
           <type>input</type>
-          <id>ctaUrl_s</id>
+          <id>backgroundImageDesktop_s</id>
           <iceId></iceId>
-          <title>CTA Button URL</title>
-          <description></description>
-          <defaultValue>#</defaultValue>
-          <help></help>
-          <properties>
-            <property><name>size</name><value>100</value><type>int</type></property>
-            <property><name>maxlength</name><value>255</value><type>int</type></property>
-          </properties>
-          <constraints></constraints>
-        </field>
-        <field>
-          <type>input</type>
-          <id>backgroundImage_s</id>
-          <iceId></iceId>
-          <title>Background Image Path</title>
-          <description>Path to hero background image in static-assets</description>
+          <title>Background Image — Desktop (≥ 1024px)</title>
+          <description>Path in static-assets. ~1216×653 recommended.</description>
           <defaultValue>/static-assets/images/hero-background.webp</defaultValue>
           <help></help>
           <properties>
@@ -122,52 +144,17 @@
           </properties>
           <constraints></constraints>
         </field>
-      </fields>
-    </section>
-    <section>
-      <title>Feature Badges</title>
-      <description>Three quick-feature icons shown inside the hero card</description>
-      <defaultOpen>false</defaultOpen>
-      <fields>
         <field>
           <type>input</type>
-          <id>badge1Label_s</id>
+          <id>backgroundImageTablet_s</id>
           <iceId></iceId>
-          <title>Badge 1 Label</title>
-          <description></description>
-          <defaultValue>Open in minutes</defaultValue>
+          <title>Background Image — Tablet/Mobile (≤ 1023px)</title>
+          <description>Smaller version for narrower viewports.</description>
+          <defaultValue>/static-assets/images/hero-background-1x.webp</defaultValue>
           <help></help>
           <properties>
-            <property><name>size</name><value>50</value><type>int</type></property>
-            <property><name>maxlength</name><value>100</value><type>int</type></property>
-          </properties>
-          <constraints></constraints>
-        </field>
-        <field>
-          <type>input</type>
-          <id>badge2Label_s</id>
-          <iceId></iceId>
-          <title>Badge 2 Label</title>
-          <description></description>
-          <defaultValue>Available 24/7</defaultValue>
-          <help></help>
-          <properties>
-            <property><name>size</name><value>50</value><type>int</type></property>
-            <property><name>maxlength</name><value>100</value><type>int</type></property>
-          </properties>
-          <constraints></constraints>
-        </field>
-        <field>
-          <type>input</type>
-          <id>badge3Label_s</id>
-          <iceId></iceId>
-          <title>Badge 3 Label</title>
-          <description></description>
-          <defaultValue>Zero monthly fees</defaultValue>
-          <help></help>
-          <properties>
-            <property><name>size</name><value>50</value><type>int</type></property>
-            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>size</name><value>100</value><type>int</type></property>
+            <property><name>maxlength</name><value>255</value><type>int</type></property>
           </properties>
           <constraints></constraints>
         </field>
