@@ -16,15 +16,15 @@
 	<metaDescription_s>GoTyme Business empowers SMEs in Hong Kong with a smarter, more accessible banking solution. Open in minutes, available 24/7, zero monthly fees.</metaDescription_s>
 	<containerSection_o item-list="true">
 		<item>
-			<key>hero1-0000-0000-0000-000000000001</key>
+			<key>30466cc2-7619-41e5-afdb-329a4c90eb39</key>
 			<value>Hero - Home</value>
 			<component>
 				<content-type>/component/component-hero</content-type>
 				<display-template>/templates/web/components/hero.ftl</display-template>
 				<merge-strategy>inherit-levels</merge-strategy>
 				<internal-name>Hero - Home</internal-name>
-				<objectGroupId>hero1</objectGroupId>
-				<objectId>hero1-0000-0000-0000-000000000001</objectId>
+				<objectGroupId>3046</objectGroupId>
+				<objectId>30466cc2-7619-41e5-afdb-329a4c90eb39</objectId>
 				<headline_s>The Business Account | That Works As Hard As You</headline_s>
 				<subtext_s>GoTyme Business empowers SMEs with a smarter, more accessible banking solution.</subtext_s>
 				<ctaLabel_s>Get started</ctaLabel_s>
