@@ -9,21 +9,20 @@
 
 <#--
   Hero is a flex column with two children:
-    1. .hero-content — text block at the top, takes its natural height.
-    2. .hero-image-area — fills the remaining space (flex-1), holds the
-       background image. Because text and image live in separate flex
-       children, they can NEVER overlap — even if the headline / subtitle
-       grows longer (more lines, longer translations), the image area
-       just shrinks accordingly.
+    1. .hero-content   — text block at the top, intrinsic height.
+    2. .hero-image-area — image at natural aspect ratio (w-full h-auto),
+       so the section height grows / shrinks dynamically as the viewport
+       width changes. Nothing is cropped — the full image is always shown.
 
-  Heights mirror gotyme.com.hk:
-    < 640px → 400px,  640-1023px → 500px,  ≥ 1024px → 653px.
+  Because text and image live in separate flex children that stack
+  naturally, they can never overlap. If a translation makes the
+  headline / subtitle longer, the section grows; if the viewport is
+  narrower, the image shrinks proportionally.
 -->
 <section class="
   hero relative overflow-hidden flex flex-col bg-[#00f5fa]
   mx-auto mb-6
   w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-[1216px]
-  h-[400px] sm:h-[500px] lg:h-[653px]
   rounded-2xl sm:rounded-3xl lg:rounded-[32px]
 ">
   <#-- Text block — pinned to the top, sized by its content. -->
@@ -31,7 +30,8 @@
     relative z-[2]
     w-full
     px-4 sm:px-5 lg:px-10
-    pt-16 sm:pt-20
+    pt-12 sm:pt-16 lg:pt-20
+    pb-6 sm:pb-8 lg:pb-10
     flex flex-col items-center text-center
     shrink-0
   ">
@@ -64,9 +64,9 @@
     </p>
   </div>
 
-  <#-- Image area — fills remaining space, image cropped only inside this box. -->
-  <div class="relative flex-1 min-h-0 w-full overflow-hidden">
-    <picture class="block w-full h-full">
+  <#-- Image area — natural aspect ratio, full width, no cropping. -->
+  <div class="w-full">
+    <picture class="block w-full">
       <source media="(min-width: 1024px)" srcset="${bgDesktop}" type="image/webp" sizes="1216px">
       <source media="(min-width: 768px)"  srcset="${bgTablet}"  type="image/webp" sizes="768px">
       <img
@@ -77,7 +77,7 @@
         width="1216"
         height="653"
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1216px"
-        class="absolute inset-0 w-full h-full object-cover object-bottom">
+        class="block w-full h-auto">
     </picture>
   </div>
 </section>
