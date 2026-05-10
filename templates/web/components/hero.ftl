@@ -1,6 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
-<#assign headline           = contentModel.headline_s!"Big growth for small businesses." />
-<#assign headlineMobile1    = contentModel.headlineMobileLine1_s!"Big growth for" />
+<#assign headline           = contentModel.headline_s!"Small for small businesses." />
+<#assign headlineMobile1    = contentModel.headlineMobileLine1_s!"Small growth for" />
 <#assign headlineMobile2    = contentModel.headlineMobileLine2_s!"small businesses" />
 <#assign subtitle1          = contentModel.subtitle1_s!"GoTyme Merchant Cash Advance Asia is a regional provider of fast, flexible financing built for SMEs." />
 <#assign subtitle2          = contentModel.subtitle2_s!"" />

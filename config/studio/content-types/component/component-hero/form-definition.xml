@@ -55,7 +55,7 @@
           <iceId></iceId>
           <title>Headline (desktop)</title>
           <description>Single-line headline shown on tablet/desktop (≥ 480px)</description>
-          <defaultValue>Big growth for small businesses.</defaultValue>
+          <defaultValue>Small growth for small businesses.</defaultValue>
           <help></help>
           <properties>
             <property><name>size</name><value>100</value><type>int</type></property>
@@ -71,7 +71,7 @@
           <iceId></iceId>
           <title>Headline mobile — line 1</title>
           <description>First line of the headline on small mobile (&lt; 480px)</description>
-          <defaultValue>Big growth for</defaultValue>
+          <defaultValue>Small growth for</defaultValue>
           <help></help>
           <properties>
             <property><name>size</name><value>50</value><type>int</type></property>
