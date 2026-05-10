@@ -7,13 +7,26 @@ interface Language {
 }
 
 const languages: Language[] = [
-  { code: 'en', label: 'EN', flag: '/static-assets/images/hongkong-flag.svg' },
+  { code: 'en', label: 'EN',   flag: '/static-assets/images/hongkong-flag.svg' },
   { code: 'zh', label: '中文', flag: '/static-assets/images/hongkong-flag.svg' },
 ];
 
+const KNOWN_LOCALES = new Set(languages.map(l => l.code));
+
+function switchLocale(newCode: string) {
+  const path = window.location.pathname;
+  const parts = path.split('/').filter(Boolean);
+  if (parts.length > 0 && KNOWN_LOCALES.has(parts[0])) {
+    parts[0] = newCode;
+  } else {
+    parts.unshift(newCode);
+  }
+  const newPath = '/' + parts.join('/') + (path.endsWith('/') ? '/' : '');
+  window.location.href = newPath + window.location.search + window.location.hash;
+}
+
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState(languages[0]);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -29,25 +42,25 @@ export default function Header() {
   const el = document.querySelector<HTMLElement>('[data-header]');
   if (!el) return null;
 
-  const logoSrc = el.dataset.logoSrc ?? '/static-assets/images/gotyme-logo-black.svg';
-  const location = el.dataset.location ?? 'Hong Kong';
-  const ctaLabel = el.dataset.ctaLabel ?? 'Partner with us';
-  const ctaUrl = el.dataset.ctaUrl ?? '#';
+  const logoSrc       = el.dataset.logoSrc       ?? '/static-assets/images/gotyme-logo-black.svg';
+  const location      = el.dataset.location      ?? 'Hong Kong';
+  const ctaLabel      = el.dataset.ctaLabel      ?? 'Partner with us';
+  const ctaUrl        = el.dataset.ctaUrl        ?? '#';
+  const currentLocale = el.dataset.currentLocale ?? 'en';
+
+  const current = languages.find(l => l.code === currentLocale) ?? languages[0];
 
   return (
     <header className="bg-cool-grey sticky top-0 z-50 rounded-2xl mx-4 mt-8 mb-6 max-w-[1216px] lg:mx-auto h-[90px] flex items-center px-10">
       <div className="flex items-center justify-between gap-5 w-full h-full">
 
-        {/* Logo + location */}
-        <a href="/" className="flex items-center gap-5 no-underline text-charcoal w-[19rem] shrink-0">
+        <a href={`/${currentLocale}/`} className="flex items-center gap-5 no-underline text-charcoal w-[19rem] shrink-0">
           <img src={logoSrc} alt="GoTyme" className="h-8 w-auto max-w-[129px]" />
           <span className="font-medium text-2xl leading-tight text-charcoal whitespace-nowrap">{location}</span>
         </a>
 
-        {/* Actions */}
         <div className="flex items-center gap-3 flex-1 justify-end">
 
-          {/* Language switcher */}
           <div ref={ref} className="relative inline-block">
             <button
               onClick={() => setOpen(o => !o)}
@@ -68,7 +81,7 @@ export default function Header() {
                 {languages.map((lang, i) => (
                   <div key={lang.code}>
                     <button
-                      onClick={() => { setCurrent(lang); setOpen(false); }}
+                      onClick={() => switchLocale(lang.code)}
                       className={`w-full flex items-center gap-3 px-5 py-4 border-none bg-transparent cursor-pointer hover:bg-light-grey transition-colors text-left ${current.code === lang.code ? 'font-bold' : 'font-medium'}`}
                     >
                       <img src={lang.flag} alt="" className="w-6 h-6 rounded-full object-cover shrink-0" />
@@ -86,7 +99,6 @@ export default function Header() {
             )}
           </div>
 
-          {/* CTA */}
           <a
             href={ctaUrl}
             className="bg-purple text-white font-bold text-xl rounded-full px-6 h-[60px] flex items-center justify-center no-underline hover:bg-[#3a0bc7] transition-colors whitespace-nowrap"
