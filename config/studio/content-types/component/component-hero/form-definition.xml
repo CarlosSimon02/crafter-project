@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <title>Component - Hero</title>
+  <description>Full-width hero section with background image, headline, subtext, and CTA</description>
+  <objectType>component</objectType>
+  <content-type>/component/component-hero</content-type>
+  <imageThumbnail></imageThumbnail>
+  <quickCreate>false</quickCreate>
+  <quickCreatePath></quickCreatePath>
+  <properties>
+    <property>
+      <name>display-template</name>
+      <label>Display Template</label>
+      <value>/templates/web/components/hero.ftl</value>
+      <type>template</type>
+    </property>
+    <property>
+      <name>no-template-required</name>
+      <label>No Template Required</label>
+      <value></value>
+      <type>boolean</type>
+    </property>
+    <property>
+      <name>merge-strategy</name>
+      <label>Merge Strategy</label>
+      <value>inherit-levels</value>
+      <type>string</type>
+    </property>
+  </properties>
+  <sections>
+    <section>
+      <title>Hero Content</title>
+      <description></description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>input</type>
+          <id>internal-name</id>
+          <iceId></iceId>
+          <title>Internal Name</title>
+          <description></description>
+          <defaultValue>Hero</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>headline_s</id>
+          <iceId></iceId>
+          <title>Headline</title>
+          <description>Main headline text (supports line breaks via | character)</description>
+          <defaultValue>The Business Account | That Works As Hard As You</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>100</value><type>int</type></property>
+            <property><name>maxlength</name><value>200</value><type>int</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>textarea</type>
+          <id>subtext_s</id>
+          <iceId></iceId>
+          <title>Subtext</title>
+          <description>Short description below the headline</description>
+          <defaultValue>GoTyme Business empowers SMEs with a smarter, more accessible banking solution.</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>cols</name><value>60</value><type>int</type></property>
+            <property><name>rows</name><value>3</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>ctaLabel_s</id>
+          <iceId></iceId>
+          <title>CTA Button Label</title>
+          <description></description>
+          <defaultValue>Get started</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>ctaUrl_s</id>
+          <iceId></iceId>
+          <title>CTA Button URL</title>
+          <description></description>
+          <defaultValue>#</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>100</value><type>int</type></property>
+            <property><name>maxlength</name><value>255</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>backgroundImage_s</id>
+          <iceId></iceId>
+          <title>Background Image Path</title>
+          <description>Path to hero background image in static-assets</description>
+          <defaultValue>/static-assets/images/hero-background.webp</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>100</value><type>int</type></property>
+            <property><name>maxlength</name><value>255</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+      </fields>
+    </section>
+    <section>
+      <title>Feature Badges</title>
+      <description>Three quick-feature icons shown inside the hero card</description>
+      <defaultOpen>false</defaultOpen>
+      <fields>
+        <field>
+          <type>input</type>
+          <id>badge1Label_s</id>
+          <iceId></iceId>
+          <title>Badge 1 Label</title>
+          <description></description>
+          <defaultValue>Open in minutes</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>badge2Label_s</id>
+          <iceId></iceId>
+          <title>Badge 2 Label</title>
+          <description></description>
+          <defaultValue>Available 24/7</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>badge3Label_s</id>
+          <iceId></iceId>
+          <title>Badge 3 Label</title>
+          <description></description>
+          <defaultValue>Zero monthly fees</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+      </fields>
+    </section>
+  </sections>
+  <datasources></datasources>
+</form>

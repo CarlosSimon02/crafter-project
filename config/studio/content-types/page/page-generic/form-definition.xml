@@ -309,7 +309,7 @@
         </property>
         <property>
           <name>contentTypes</name>
-          <value>/component/component-rte,/component/component-containersection,/component/component-responsivecolumns</value>
+          <value>/component/component-hero,/component/component-rte,/component/component-containersection,/component/component-responsivecolumns</value>
           <type>contentTypes</type>
         </property>
         <property>

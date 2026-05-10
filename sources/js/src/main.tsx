@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import './main.css';
 import Header from './components/Header';
+import Hero from './components/Hero';
 
 function mountComponent<T extends HTMLElement>(
   selector: string,
@@ -16,6 +17,7 @@ function mountComponent<T extends HTMLElement>(
 
 function init() {
   mountComponent('[data-header]', Header);
+  mountComponent('[data-hero]', Hero);
 }
 
 if (document.readyState === 'loading') {

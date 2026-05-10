@@ -2,39 +2,39 @@
 <page>
 	<content-type>/page/page-generic</content-type>
 	<display-template>/templates/web/generic-page.ftl</display-template>
-	<merge-strategy>inherit-levels</merge-strategy>
+	<merge-strategy>targetedContent</merge-strategy>
 	<file-name>index.xml</file-name>
-	<internal-name>Home</internal-name>
+	<internal-name>Home (中文)</internal-name>
 	<objectGroupId>8d7f</objectGroupId>
 	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
 	<folder-name/>
-	<createdDate>2017-01-31T16:18:14.000Z</createdDate>
-	<createdDate_dt>2017-01-31T16:18:14.000Z</createdDate_dt>
+	<createdDate>2026-05-10T00:00:00.000Z</createdDate>
+	<createdDate_dt>2026-05-10T00:00:00.000Z</createdDate_dt>
 	<lastModifiedDate>2026-05-10T00:00:00.000Z</lastModifiedDate>
 	<lastModifiedDate_dt>2026-05-10T00:00:00.000Z</lastModifiedDate_dt>
-	<seoTitle_s>GoTyme Business – The Business Account That Works As Hard As You</seoTitle_s>
-	<metaDescription_s>GoTyme Business empowers SMEs in Hong Kong with a smarter, more accessible banking solution. Open in minutes, available 24/7, zero monthly fees.</metaDescription_s>
+	<seoTitle_s>GoTyme Business – 專為您努力的企業賬戶</seoTitle_s>
+	<metaDescription_s>GoTyme Business 為香港中小企業提供更智能、更便捷的銀行解決方案。即時開戶，24/7 全天候服務，零月費。</metaDescription_s>
 	<containerSection_o item-list="true">
 		<item>
 			<key>/site/components/hero/hero-home.xml</key>
-			<value>Hero - Home</value>
+			<value>Hero - Home (中文)</value>
 			<include>/site/components/hero/hero-home.xml</include>
 			<disableFlattening>true</disableFlattening>
 			<component>
 				<content-type>/component/component-hero</content-type>
 				<display-template>/templates/web/components/hero.ftl</display-template>
 				<merge-strategy>inherit-levels</merge-strategy>
-				<internal-name>Hero - Home</internal-name>
+				<internal-name>Hero - Home (中文)</internal-name>
 				<objectGroupId>hero1</objectGroupId>
 				<objectId>hero1-0000-0000-0000-000000000001</objectId>
-				<headline_s>The Business Account | That Works As Hard As You</headline_s>
-				<subtext_s>GoTyme Business empowers SMEs with a smarter, more accessible banking solution.</subtext_s>
-				<ctaLabel_s>Get started</ctaLabel_s>
+				<headline_s>專為您努力 | 的企業賬戶</headline_s>
+				<subtext_s>GoTyme Business 為香港中小企業提供更智能、更便捷的銀行解決方案。</subtext_s>
+				<ctaLabel_s>立即開始</ctaLabel_s>
 				<ctaUrl_s>#</ctaUrl_s>
 				<backgroundImage_s>/static-assets/images/hero-background.webp</backgroundImage_s>
-				<badge1Label_s>Open in minutes</badge1Label_s>
-				<badge2Label_s>Available 24/7</badge2Label_s>
-				<badge3Label_s>Zero monthly fees</badge3Label_s>
+				<badge1Label_s>即時開戶</badge1Label_s>
+				<badge2Label_s>24/7 全天候</badge2Label_s>
+				<badge3Label_s>零月費</badge3Label_s>
 			</component>
 		</item>
 	</containerSection_o>
