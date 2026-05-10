@@ -70,8 +70,8 @@
       alt=""
       loading="eager"
       decoding="async"
-      width="654"
-      height="246"
+      width="2400"
+      height="903"
       class="block w-full h-auto">
   </div>
 </section>
