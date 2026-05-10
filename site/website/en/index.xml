@@ -2,7 +2,7 @@
 <page>
 	<content-type>/page/page-generic</content-type>
 	<display-template>/templates/web/generic-page.ftl</display-template>
-	<merge-strategy>inherit-levels</merge-strategy>
+	<merge-strategy>targetedContent</merge-strategy>
 	<file-name>index.xml</file-name>
 	<internal-name>Home</internal-name>
 	<objectGroupId>8d7f</objectGroupId>

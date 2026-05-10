@@ -38,8 +38,5 @@
         <permitted>
             <mime-types>*/*</mime-types>
         </permitted>
-        <denied>
-            <mime-types>image/svg+xml</mime-types>
-        </denied>
     </statement>
 </site-policy>
