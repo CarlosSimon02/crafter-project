@@ -7,7 +7,7 @@
     <rootFolders>/site/website</rootFolders>
     <fallbackTargetId>en</fallbackTargetId>
     <mergeFolders>true</mergeFolders>
-    <redirectToTargetedUrl>true</redirectToTargetedUrl>
+    <redirectToTargetedUrl>false</redirectToTargetedUrl>
     <availableTargetIds>
       <availableTargetId>en</availableTargetId>
       <availableTargetId>zh</availableTargetId>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-generic</content-type>
+	<display-template>/templates/web/redirect.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<file-name>index.xml</file-name>
+	<internal-name>Locale Redirect</internal-name>
+	<objectGroupId>rdir</objectGroupId>
+	<objectId>rdir0001-0000-0000-0000-000000000001</objectId>
+	<folder-name/>
+	<createdDate>2026-05-10T00:00:00.000Z</createdDate>
+	<createdDate_dt>2026-05-10T00:00:00.000Z</createdDate_dt>
+	<lastModifiedDate>2026-05-10T00:00:00.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-05-10T00:00:00.000Z</lastModifiedDate_dt>
+	<targetUrl_s>/en/</targetUrl_s>
+</page>
