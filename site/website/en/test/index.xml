@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-generic</content-type>
+	<display-template>/templates/web/generic-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<placeInNav>true</placeInNav>
+	<file-name>index.xml</file-name>
+	<folder-name>test</folder-name>
+	<internal-name>Test Page</internal-name>
+	<navLabel>Test</navLabel>
+	<orderDefault_f>10</orderDefault_f>
+	<objectGroupId>770a</objectGroupId>
+	<objectId>770ac406-f622-4a1c-8ddd-67f7a0f2360c</objectId>
+	<createdDate>2026-05-10T00:00:00.000Z</createdDate>
+	<createdDate_dt>2026-05-10T00:00:00.000Z</createdDate_dt>
+	<lastModifiedDate>2026-05-10T00:00:00.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-05-10T00:00:00.000Z</lastModifiedDate_dt>
+	<seoTitle_s>Test Page — Bind Mount Verification</seoTitle_s>
+	<metaDescription_s>Throwaway page to verify Studio picks up new pages created via VS Code on the bind mount.</metaDescription_s>
+	<containerSection_o item-list="true"/>
+</page>
