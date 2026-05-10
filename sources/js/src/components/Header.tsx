@@ -68,25 +68,25 @@ export default function Header() {
       {/* .header-content gap: .375 → .5 → 1.375rem */}
       <div className="flex items-center justify-between gap-1.5 sm:gap-2 md:gap-[1.375rem] w-full h-full">
 
-        {/* .logo — w 8rem → 10rem → 19rem; max-w 60% on mobile */}
+        {/* .logo — flex sized; content (image + location) drives the actual width.
+            We don't cap with max-width or use truncate, matching gotyme.com.hk's
+            behavior where the location text always shows fully. */}
         <a
           href={`/${currentLocale}/`}
           className="
-            flex items-center
+            flex items-center shrink-0 no-underline text-charcoal min-w-0
             gap-1.5 sm:gap-2 md:gap-[1.375rem]
-            w-32 sm:w-40 md:w-[19rem]
-            max-w-[60%] md:max-w-none
-            shrink-0 no-underline text-charcoal min-w-0
+            md:w-[19rem]
           "
         >
           {/* .logo-image: h 20 → 24 → 32; max-w 60 → 80 → 129 */}
           <img
             src={logoSrc}
             alt="GoTyme"
-            className="h-5 sm:h-6 md:h-8 w-auto max-w-[60px] sm:max-w-[80px] md:max-w-[129px] cursor-pointer"
+            className="h-5 sm:h-6 md:h-8 w-auto max-w-[60px] sm:max-w-[80px] md:max-w-[129px] cursor-pointer shrink-0"
           />
-          {/* .location: 14 → 16 → 24 */}
-          <span className="font-sans font-medium text-sm sm:text-base md:text-2xl leading-tight text-charcoal whitespace-nowrap truncate">
+          {/* .location: 14 → 16 → 24; nowrap so it stays single-line, no clipping */}
+          <span className="font-sans font-medium text-sm sm:text-base md:text-2xl leading-tight text-charcoal whitespace-nowrap">
             {location}
           </span>
         </a>

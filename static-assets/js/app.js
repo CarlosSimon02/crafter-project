@@ -54,12 +54,10 @@ Error generating stack: `+a.message+`
       max-w-[1216px]
       flex items-center
     `,children:fl.jsxs("div",{className:"flex items-center justify-between gap-1.5 sm:gap-2 md:gap-[1.375rem] w-full h-full",children:[fl.jsxs("a",{href:`/${U}/`,className:`
-            flex items-center
+            flex items-center shrink-0 no-underline text-charcoal min-w-0
             gap-1.5 sm:gap-2 md:gap-[1.375rem]
-            w-32 sm:w-40 md:w-[19rem]
-            max-w-[60%] md:max-w-none
-            shrink-0 no-underline text-charcoal min-w-0
-          `,children:[fl.jsx("img",{src:yl,alt:"GoTyme",className:"h-5 sm:h-6 md:h-8 w-auto max-w-[60px] sm:max-w-[80px] md:max-w-[129px] cursor-pointer"}),fl.jsx("span",{className:"font-sans font-medium text-sm sm:text-base md:text-2xl leading-tight text-charcoal whitespace-nowrap truncate",children:hl})]}),fl.jsxs("div",{className:"flex items-center gap-1 sm:gap-1.5 md:gap-3 flex-shrink-0 flex-grow basis-0 md:flex-1 justify-end min-w-0",children:[fl.jsx("a",{href:Ml,className:`
+            md:w-[19rem]
+          `,children:[fl.jsx("img",{src:yl,alt:"GoTyme",className:"h-5 sm:h-6 md:h-8 w-auto max-w-[60px] sm:max-w-[80px] md:max-w-[129px] cursor-pointer shrink-0"}),fl.jsx("span",{className:"font-sans font-medium text-sm sm:text-base md:text-2xl leading-tight text-charcoal whitespace-nowrap",children:hl})]}),fl.jsxs("div",{className:"flex items-center gap-1 sm:gap-1.5 md:gap-3 flex-shrink-0 flex-grow basis-0 md:flex-1 justify-end min-w-0",children:[fl.jsx("a",{href:Ml,className:`
               inline-flex items-center justify-center
               bg-purple text-white font-sans font-bold leading-[1.4]
               no-underline rounded-full whitespace-nowrap
