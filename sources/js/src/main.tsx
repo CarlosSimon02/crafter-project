@@ -1,12 +1,21 @@
 import { createRoot } from 'react-dom/client';
 import './main.css';
-import Counter from './components/Counter';
+import Header from './components/Header';
+
+function mountComponent<T extends HTMLElement>(
+  selector: string,
+  Component: React.ComponentType
+) {
+  const el = document.querySelector<T>(selector);
+  if (!el) return;
+  const root = document.createElement('div');
+  root.style.display = 'contents';
+  el.appendChild(root);
+  createRoot(root).render(<Component />);
+}
 
 function init() {
-  const el = document.createElement('div');
-  el.style.display = 'contents';
-  document.body.appendChild(el);
-  createRoot(el).render(<Counter />);
+  mountComponent('[data-header]', Header);
 }
 
 if (document.readyState === 'loading') {

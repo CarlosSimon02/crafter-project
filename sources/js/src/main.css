@@ -1,2 +1,67 @@
 @import "tailwindcss";
 @source "../../../templates/**/*.ftl";
+
+@font-face {
+  font-family: "GoTymeSans";
+  font-weight: 100;
+  font-display: swap;
+  src: url(/static-assets/fonts/GoTymeSans-Thin.ed4164eedb107091db28351b7f25a598.woff2) format("woff2");
+}
+@font-face {
+  font-family: "GoTymeSans";
+  font-weight: 400;
+  font-display: swap;
+  src: url(/static-assets/fonts/GoTymeSans-Regular.572f37c20cb7a079d6b006d147274d4c.woff2) format("woff2");
+}
+@font-face {
+  font-family: "GoTymeSans";
+  font-weight: 500;
+  font-display: swap;
+  src: url(/static-assets/fonts/GoTymeSans-Medium.62d81b6a761b189789e0fd69d2ef58d2.woff2) format("woff2");
+}
+@font-face {
+  font-family: "GoTymeSans";
+  font-weight: 700;
+  font-display: swap;
+  src: url(/static-assets/fonts/GoTymeSans-Bold.aa091161c05479a845f3427d283eea00.woff2) format("woff2");
+}
+@font-face {
+  font-family: "GoTymeSans";
+  font-weight: 900;
+  font-display: swap;
+  src: url(/static-assets/fonts/GoTymeSans-Black.f5a88cdb8537b02e352892436838992b.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-display: swap;
+  src: url(/static-assets/fonts/inter-400.0b7ebb30c248fcda7217d4133db7140d.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-display: swap;
+  src: url(/static-assets/fonts/inter-700.baa2f906dccb6dcea188fff2f9c8a5bc.woff2) format("woff2");
+}
+
+@theme {
+  --font-sans: "GoTymeSans", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-charcoal:    #2D2D3A;
+  --color-energy-blue: #00F0F5;
+  --color-cool-grey:   #E8F3F5;
+  --color-light-grey:  #F0F2F5;
+  --color-text-grey:   #9B9BAA;
+  --color-purple:      #4A0BE8;
+  --color-hero-cyan:   #00F5FA;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}

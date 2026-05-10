@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <title>Component - Header</title>
+  <description>Site header with logo, location label, language switcher, and CTA button</description>
+  <objectType>component</objectType>
+  <content-type>/component/component-header</content-type>
+  <imageThumbnail></imageThumbnail>
+  <quickCreate>false</quickCreate>
+  <quickCreatePath></quickCreatePath>
+  <properties>
+    <property>
+      <name>display-template</name>
+      <label>Display Template</label>
+      <value>/templates/web/components/header.ftl</value>
+      <type>template</type>
+    </property>
+    <property>
+      <name>no-template-required</name>
+      <label>No Template Required</label>
+      <value></value>
+      <type>boolean</type>
+    </property>
+    <property>
+      <name>merge-strategy</name>
+      <label>Merge Strategy</label>
+      <value>inherit-levels</value>
+      <type>string</type>
+    </property>
+  </properties>
+  <sections>
+    <section>
+      <title>Header Settings</title>
+      <description></description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>input</type>
+          <id>internal-name</id>
+          <iceId></iceId>
+          <title>Internal Name</title>
+          <description></description>
+          <defaultValue>Header</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>logoImage_s</id>
+          <iceId></iceId>
+          <title>Logo Image Path</title>
+          <description>Path to logo in static-assets (e.g. /static-assets/images/gotyme-logo-black.svg)</description>
+          <defaultValue>/static-assets/images/gotyme-logo-black.svg</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>100</value><type>int</type></property>
+            <property><name>maxlength</name><value>255</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>location_s</id>
+          <iceId></iceId>
+          <title>Location Label</title>
+          <description>Text displayed next to the logo (e.g. "Hong Kong")</description>
+          <defaultValue>Hong Kong</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>ctaLabel_s</id>
+          <iceId></iceId>
+          <title>CTA Button Label</title>
+          <description></description>
+          <defaultValue>Partner with us</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>ctaUrl_s</id>
+          <iceId></iceId>
+          <title>CTA Button URL</title>
+          <description></description>
+          <defaultValue>#</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>100</value><type>int</type></property>
+            <property><name>maxlength</name><value>255</value><type>int</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+      </fields>
+    </section>
+  </sections>
+  <datasources></datasources>
+</form>

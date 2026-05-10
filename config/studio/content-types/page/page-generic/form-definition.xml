@@ -104,57 +104,6 @@
           </constraints>
         </field>
         <field>
-          <type>page-nav-order</type>
-          <id>placeInNav</id>
-          <iceId></iceId>
-          <title>Place in sitemap</title>
-          <description></description>
-          <defaultValue></defaultValue>
-          <help></help>
-          <properties>
-            <property>
-              <name>readonly</name>
-              <value></value>
-              <type>boolean</type>
-            </property>
-          </properties>
-          <constraints>
-            <constraint>
-              <name>required</name>
-              <value><![CDATA[]]></value>
-              <type>boolean</type>
-            </constraint>
-          </constraints>
-        </field>
-        <field>
-          <type>input</type>
-          <id>navLabel</id>
-          <iceId></iceId>
-          <title>Nav Label</title>
-          <description></description>
-          <defaultValue></defaultValue>
-          <help></help>
-          <properties>
-            <property>
-              <name>size</name>
-              <value>50</value>
-              <type>int</type>
-            </property>
-            <property>
-              <name>maxlength</name>
-              <value>50</value>
-              <type>int</type>
-            </property>
-          </properties>
-          <constraints>
-            <constraint>
-              <name>required</name>
-              <value><![CDATA[true]]></value>
-              <type>boolean</type>
-            </constraint>
-          </constraints>
-        </field>
-        <field>
           <type>node-selector</type>
           <id>containerSection_o</id>
           <iceId></iceId>
@@ -202,29 +151,6 @@
           <constraints>
             <constraint>
               <name>allowDuplicates</name>
-              <value><![CDATA[]]></value>
-              <type>boolean</type>
-            </constraint>
-          </constraints>
-        </field>
-        <field>
-          <type>checkbox</type>
-          <id>disabled</id>
-          <iceId></iceId>
-          <title>Disable Page</title>
-          <description></description>
-          <defaultValue>false</defaultValue>
-          <help></help>
-          <properties>
-            <property>
-              <name>readonly</name>
-              <value></value>
-              <type>boolean</type>
-            </property>
-          </properties>
-          <constraints>
-            <constraint>
-              <name>required</name>
               <value><![CDATA[]]></value>
               <type>boolean</type>
             </constraint>
@@ -297,43 +223,11 @@
           <constraints></constraints>
         </field>
         <field>
-          <type>image-picker</type>
+          <type>input</type>
           <id>ogImage_s</id>
           <iceId></iceId>
           <title>Social Share Image</title>
-          <description>Image used when sharing this page on social media.</description>
-          <defaultValue></defaultValue>
-          <help></help>
-          <properties>
-            <property>
-              <name>width</name>
-              <value>{ "exact":"", "min":"", "max":"" }</value>
-              <type>range</type>
-            </property>
-            <property>
-              <name>height</name>
-              <value>{ "exact":"", "min":"", "max":"" }</value>
-              <type>range</type>
-            </property>
-            <property>
-              <name>thumbnailWidth</name>
-              <value></value>
-              <type>int</type>
-            </property>
-            <property>
-              <name>thumbnailHeight</name>
-              <value></value>
-              <type>int</type>
-            </property>
-          </properties>
-          <constraints></constraints>
-        </field>
-        <field>
-          <type>input</type>
-          <id>canonicalUrl_s</id>
-          <iceId></iceId>
-          <title>Canonical URL</title>
-          <description>Override the canonical URL. Leave empty to auto-generate.</description>
+          <description>Path to image in static-assets (e.g. /static-assets/images/og.jpg)</description>
           <defaultValue></defaultValue>
           <help></help>
           <properties>

@@ -4,13 +4,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${contentModel.seoTitle_s!contentModel.navLabel!""}</title>
-    <#if contentModel.metaDescription_s?has_content>
-      <meta name="description" content="${contentModel.metaDescription_s}">
+    <#assign pageTitle = contentModel.seoTitle_s!contentModel["internal-name"]!"" />
+    <#assign pageDescription = contentModel.metaDescription_s!"" />
+    <#assign pageUrl = "https://${request.serverName}${request.requestURI}" />
+    <title>${pageTitle}</title>
+    <#if pageDescription?has_content>
+      <meta name="description" content="${pageDescription}">
     </#if>
     <#if (contentModel.noIndex_b)!false>
       <meta name="robots" content="noindex">
     </#if>
+    <link rel="canonical" href="${pageUrl}">
+    <#if pageTitle?has_content>
+      <meta property="og:title" content="${pageTitle}">
+    </#if>
+    <#if pageDescription?has_content>
+      <meta property="og:description" content="${pageDescription}">
+    </#if>
+    <#if contentModel.ogImage_s?has_content>
+      <meta property="og:image" content="${contentModel.ogImage_s}">
+    </#if>
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/static-assets/js/app.css">
     <@crafter.head/>
   </head>
