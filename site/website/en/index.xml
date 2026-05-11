@@ -3,11 +3,9 @@
 	<content-type>/page/page-generic</content-type>
 	<display-template>/templates/web/generic-page.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<placeInNav>true</placeInNav>
 	<file-name>index.xml</file-name>
 	<folder-name>en</folder-name>
 	<internal-name>Home</internal-name>
-	<navLabel>English</navLabel>
 	<orderDefault_f>0</orderDefault_f>
 	<objectGroupId>7e45</objectGroupId>
 	<objectId>7e45860c-ef49-4934-a831-b1cd8d366099</objectId>

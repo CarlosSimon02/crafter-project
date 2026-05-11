@@ -3,11 +3,9 @@
 	<content-type>/page/page-generic</content-type>
 	<display-template>/templates/web/generic-page.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<placeInNav>true</placeInNav>
 	<file-name>index.xml</file-name>
 	<folder-name>zh</folder-name>
 	<internal-name>Home (中文)</internal-name>
-	<navLabel>繁體中文</navLabel>
 	<orderDefault_f>1</orderDefault_f>
 	<objectGroupId>5a24</objectGroupId>
 	<objectId>5a2426ae-6da8-469c-8d26-6030b5367976</objectId>

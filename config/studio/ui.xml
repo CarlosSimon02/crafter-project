@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Copyright (C) 2007-2026 Crafter Software Corporation. All Rights Reserved.
   ~
@@ -34,7 +34,7 @@
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
 						<id>Pages</id>
-						<label id="pathNavigatorTree.pages" defaultMessage="Pages"/>
+						<label>Pages</label>
 						<icon id="@mui/icons-material/DescriptionOutlined"/>
 						<rootPath>/site/website/index.xml</rootPath>
 						<locale>en</locale>
@@ -43,7 +43,7 @@
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
 						<id>Components</id>
-						<label id="pathNavigatorTree.components" defaultMessage="Components"/>
+						<label>Components</label>
 						<icon id="craftercms.icons.Component"/>
 						<rootPath>/site/components</rootPath>
 						<locale>en</locale>
@@ -52,7 +52,7 @@
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
 						<id>StaticAssets</id>
-						<label id="pathNavigatorTree.staticAssets" defaultMessage="Static Assets"/>
+						<label>Static Assets</label>
 						<icon id="@mui/icons-material/ImageOutlined"/>
 						<rootPath>/static-assets</rootPath>
 						<locale>en</locale>
@@ -60,7 +60,7 @@
 				</widget>
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
-						<label id="pathNavigatorTree.templates" defaultMessage="Templates"/>
+						<label>Templates</label>
 						<icon id="@mui/icons-material/InsertDriveFileOutlined"/>
 						<rootPath>/templates</rootPath>
 						<locale>en</locale>
@@ -68,7 +68,7 @@
 				</widget>
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
-						<label id="pathNavigatorTree.scripts" defaultMessage="Scripts"/>
+						<label>Scripts</label>
 						<icon id="@mui/icons-material/CodeRounded"/>
 						<rootPath>/scripts</rootPath>
 						<locale>en</locale>
@@ -157,34 +157,34 @@
 									<fields>
 										<segment>
 											<id>segment</id>
-											<name id="previewAudiencesPanel.segmentLabel" defaultMessage="Segment"/>
+											<name>Segment</name>
 											<description>User segment.</description>
 											<type>dropdown</type>
 											<defaultValue>anonymous</defaultValue>
 											<values>
 												<value>
-													<label id="previewAudiencesPanel.guyValueLabel" defaultMessage="Guy"/>
+													<label>Guy</label>
 													<value>guy</value>
 												</value>
 												<value>
-													<label id="previewAudiencesPanel.galValueLabel" defaultMessage="Gal"/>
+													<label>Gal</label>
 													<value>gal</value>
 												</value>
 												<value>
-													<label id="previewAudiencesPanel.anonymousValueLabel" defaultMessage="Anonymous"/>
+													<label>Anonymous</label>
 													<value>anonymous</value>
 												</value>
 											</values>
-											<helpText id="previewAudiencesPanel.segmentHelpText" defaultMessage="Setting the segment will change content targeting to the audience selected"/>
+											<helpText>Setting the segment will change content targeting to the audience selected</helpText>
 										</segment>
 										<name>
 											<id>name</id>
-											<name id="previewAudiencesPanel.nameLabel" defaultMessage="Name"/>
+											<name>Name</name>
 											<description>
 												User's first and last name.
 											</description>
 											<type>input</type>
-											<helpText id="previewAudiencesPanel.nameHelpText" defaultMessage="Enter user's first and last name"/>
+											<helpText>Enter user's first and last name</helpText>
 										</name>
 									</fields>
 								</configuration>
