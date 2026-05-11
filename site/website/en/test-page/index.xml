@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page-generic</content-type>
+	<display-template>/templates/web/generic-page.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<file-name>index.xml</file-name>
+	<folder-name>test-page</folder-name>
+	<internal-name>VS Code Test Page</internal-name>
+	<orderDefault_f>99</orderDefault_f>
+	<objectGroupId>6c7f</objectGroupId>
+	<objectId>6c7f086b-34af-4538-b478-0a8dbddacff4</objectId>
+	<createdDate>2026-05-11T00:00:00.000Z</createdDate>
+	<createdDate_dt>2026-05-11T00:00:00.000Z</createdDate_dt>
+	<lastModifiedDate>2026-05-11T00:00:00.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-05-11T00:00:00.000Z</lastModifiedDate_dt>
+	<seoTitle_s>VS Code Test Page</seoTitle_s>
+	<metaDescription_s>Page created in VS Code to verify local commit triggers Studio sidebar sync.</metaDescription_s>
+	<containerSection_o item-list="true"/>
+</page>
